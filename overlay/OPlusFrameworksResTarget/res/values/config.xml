@@ -253,4 +253,6 @@
         <item>99</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
+    <!-- Whether to use old mobile type icons as default -->
+    <bool name="config_useOldMobileIcons">true</bool>
 </resources>
