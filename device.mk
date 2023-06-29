@@ -14,8 +14,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2240
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device init scripts
 PRODUCT_PACKAGES += \
@@ -24,7 +23,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
 
 # Shipping API
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
